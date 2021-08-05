@@ -13,7 +13,28 @@ public String welcome(String name, boolean isWoman, boolean isKnighted) {
 				message+="Lady ";
 			}
 			 }
-	 
-	return message;
+			String message2 = "Hello ";
+			if(isWoman=true) {
+				if(isKnighted=false) {
+					message2+="Ms. ";
+				}
+			}
+			String message3 = "Hello ";
+			if(isWoman=false) {
+				if(isKnighted=false) {
+					message3+="Mr. ";
+				}
+			}
+			String message4 = "Hello ";
+			if(isWoman=false) {
+				if(isKnighted=true) {
+					message4+="Sir ";
+				}
+			}
+			 return message;
+			 
+			
+			 
 }
+
 }
