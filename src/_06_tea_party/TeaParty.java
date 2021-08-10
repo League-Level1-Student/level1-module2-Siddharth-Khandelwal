@@ -12,26 +12,26 @@ public String welcome(String name, boolean isWoman, boolean isKnighted) {
 			if(isKnighted) {
 				message+="Lady ";
 			}
-			 }
-			String message2 = "Hello ";
-			if(isWoman=true) {
-				if(isKnighted=false) {
-					message2+="Ms. ";
+			 
+			
+			
+			else {
+					message+="Ms. ";
 				}
 			}
-			String message3 = "Hello ";
-			if(isWoman=false) {
-				if(isKnighted=false) {
-					message3+="Mr. ";
+			
+			 else {
+				if(!isKnighted) {
+					message+="Mr. ";
+				}
+			
+			
+				else {
+				
+					message+="Sir ";
 				}
 			}
-			String message4 = "Hello ";
-			if(isWoman=false) {
-				if(isKnighted=true) {
-					message4+="Sir ";
-				}
-			}
-			 return message;
+			 return message+name;
 			 
 			
 			 
